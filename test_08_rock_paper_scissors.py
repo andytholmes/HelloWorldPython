@@ -17,7 +17,8 @@ def rock_paper_scissors(player1, player2):
     else:
         return "draw"
 
-@pytest.mark.parametrize('player1, player2, expected',[
+
+@pytest.mark.parametrize('player1, player2, expected', [
     ("rock", "scissors", "player 1"),
     ("scissors", "rock", "player 2"),
     ("scissors", "paper", "player 1"),
