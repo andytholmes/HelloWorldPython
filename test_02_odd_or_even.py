@@ -22,7 +22,7 @@ def test_odd_or_even_odd(monkeypatch):
 def test_odd_or_even_even(monkeypatch):
     #Given
     num= StringIO("8\n")
-    monkeypatch.setattr('sys.stdin',num)
+    monkeypatch.setattr('sys.stdin', num)
 
     #When
     actual = odd_or_even()

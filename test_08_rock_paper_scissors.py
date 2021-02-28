@@ -23,8 +23,9 @@ def rock_paper_scissors(player1, player2):
     ("scissors", "rock", "player 2"),
     ("scissors", "paper", "player 1"),
     ("paper", "scissors", "player 2"),
-    ("paper", "rock", "player 1"),
     ("rock", "paper", "player 2"),
+    ("paper", "scissors", "player 2"),
+    ("paper", "rock", "player 1"),
     ("rock", "rock", "draw"),
     ("paper", "paper", "draw"),
     ("scissors", "scissors", "draw")
