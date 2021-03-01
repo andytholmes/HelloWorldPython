@@ -11,8 +11,8 @@ def is_prime(number):
 
 @pytest.mark.parametrize('number, expected_prime', [
     (13, True),
-    (7, True),
-    (8, False)
+    (7,  True),
+    (8,  False)
 ])
 def test_is_prime(number, expected_prime):
     # Given
