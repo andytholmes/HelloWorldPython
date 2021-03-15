@@ -1,24 +1,18 @@
 import os
 import pyodbc
 
-db_settings = {
-    'database': 'app',
-    'user': 'app',
-    'host': 'app',
-    'port': 'app',
-    'password': 'app',
-    'application_name': 'app',
-}
-
-
+server = 'tcp:gidika.database.windows.net'
+database = 'scratchpad'
+username = 'AndyHolmes '
+password = ''
 # DB setting for non-test env
-if not os.environ.get('TEST'):
-    dbc = pyodbc.connect(**db_settings)
-    dbc.autocommit = True
-else:
+#if not os.environ.get('TEST'):
+    #dbc = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+    #dbc.autocommit = True
+#else:
 	# if we are in test return dummy object we will override by mock
-	dbc = None
+#	dbc = None
 
-def test_program():
+#def test_program():
 	# this test is using mocked database connection.
-	assert True
+#	assert True
